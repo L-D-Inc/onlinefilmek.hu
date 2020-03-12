@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+    <title>onlinefilmek.hu - Filmek FullHD-ban, Hirdetések nélkül</title>
+    <link rel="stylesheet" type="text/css" href="css/structure.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/dark.min.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="css/light.min.css"> -->
+    <script type="text/javascript" src="js/plugins.js"></script>
+  </head>
+  <body>
+    <span id="top-line"></span>
+    <div id="page">
+      <div id="main-top">
+        <div class="parent-box" id="header-box">
+          <div id="logo-box">
+            <a href="index.html">
+              <img src="images/logo.png" alt=""/>
+            </a>
+          </div>
+          <div id="search-box">
+            <input type="text" id="search-input" onkeypress="instantSearch(event)" autocomplete="off"/>
+            <button type="button" class="header-btn" id="search-btn" onclick="searchBtn()">
+              <img src="images/dark/search.png" alt=""/>
+            </button>
+            <button type="button" class="header-btn" id="filter-btn" onclick="filterBtn()">
+                <img src="images/dark/filter.png" alt=""/>
+            </button>
+          </div>
+          <div id="mini-profile-datas">
+            <div id="m-p-d-left">
+              <img src="images/dark/default_avatar.png" alt="" class="header-btn" id="avatar-img"/>
+              <p id="username"></p>
+            </div>
+              <div id="m-p-d-right">
+                <p id="level"></p>
+                <p id="points"></p>
+                <span id="points-line"></span>
+                <span id="points-line-bg"></span>
+              </div>
+          </div>
+          <div id="header-right-btns">
+            <button type="button" class="header-btn" id="user-settings-btn" onclick="userSettings()">
+              <img src="images/dark/user_settings.png" alt="" id="user-settings"/>
+            </button>
+            <button type="button" class="header-btn" id="notifications-btn" onclick="notifications()">
+              <img src="images/dark/notification.png" alt="" id="notifications"/>
+            </button>
+            <a href="logout.php" class="header-btn" id="logout-btn">
+              <img src="images/dark/logout.png" alt="" id="logout"/>
+            </a>
+          </div>
+          <div class="float-fix"></div>
+        </div>
+        <div class="float-fix"></div>
+      </div>
+      <div id="main-center">
+        <div class="parent-box" id="left-box"></div>
+        <div id="right-box">
+          <div class="parent-box" id="recommendation-box">
+
+          </div>
+          <div class="parent-box" id="content-box">
+
+          </div>
+        </div>
+        <div class="float-fix"></div>
+      </div>
+      <div id="main-bottom">
+        <div class="parent-box" id="footer-box"></div>
+      </div>
+    </div>
+  </body>
+</html>
