@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/structure.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/dark.min.css"/>
     <!-- <link rel="stylesheet" type="text/css" href="css/light.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
   </head>
   <body>
@@ -125,38 +126,58 @@
           <div class="parent-box" id="recommendation-box">
             <div id="recommendation">
               <span class="title">Filmajánló</span>
-              <div id="current-recommendation">
-
-              </div>
+              <div id="current-recommendation"></div>
             </div>
             <div id="best-of">
               <span class="title">Legnézetebb filmek</span>
-              <div id="best-of-thumbmails">
+              <div id="best-of-thumbnails">
                 <div id="best-of-thumb-l">
-                  <div class="best-of-thumbmail" id="thumbmail1">
-
-                  </div>
-                  <div class="best-of-thumbmail" id="thumbmail2">
-
-                  </div>
+                  <div class="best-of-thumbnail" id="thumbnail1"></div>
+                  <div class="best-of-thumbnail" id="thumbnail2"></div>
                 </div>
                 <div id="best-of-thumb-r">
-                  <div class="best-of-thumbmail" id="thumbmail3">
-
-                  </div>
-                  <div class="best-of-thumbmail" id="thumbmail4">
-
-                  </div>
+                  <div class="best-of-thumbnail" id="thumbnail3"></div>
+                  <div class="best-of-thumbnail" id="thumbnail4"></div>
                 </div>
-                <div class="float-fix">
-
-                </div>
+                <div class="float-fix"></div>
               </div>
             </div>
             <div class="float-fix"></div>
           </div>
           <div class="parent-box" id="content-box">
+            <span class="title">Legutóbbi feltöltések</span>
+            <div id="movie-thumbnails">
+              <div class="movie-thumbnail">
+                <div class="m-thumbnail-content">
+                  <div class="m-thumbnail-items">
+                    <div class="m-thumbnail-top">
+                      <div class="m-rating-bg"></div>
+                      <div class="m-rating">5</div>
+                      <div class="m-save-box">
+                        <img src="images/dark/save_movie.png" alt="" class="save-movie" width="15" height="27" onclick="saveMovie(this)"/>
+                        <img src="images/dark/saved_movie.png" alt="" class="saved-movie" width="15" height="27" onclick="unSaveMovie(this)"/>
+                      </div>
+                      <div class="float-fix"></div>
+                    </div>
+                    <div class="m-thumbnail-center">
+                      <span class="m-name">Vakáció</span><br/>
+                      <button type="button" class="m-play-btn">
+                        <img src="images/dark/play.png" alt="" width="18" height="18"/>
+                      </button>
+                    </div>
+                    <div class="m-thumbnail-bottom">
+                      <span class="m-date">2018</span>
+                    </div>
+                  </div>
+                  <div class="m-thumbnail-cover"></div>
+                </div>
+                <img src="images/posters/Ahihetetlencsalad2.jpg" alt="" width="150" height="220"/>
+              </div>
+              <div class="movie-thumbnail">
 
+              </div>
+              <div class="float-fix"></div>
+            </div>
           </div>
         </div>
         <div class="float-fix"></div>
